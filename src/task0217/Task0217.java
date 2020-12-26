@@ -1,12 +1,16 @@
 package task0217;
-
+/*
+Мінімум з чотирьох чисел
+*/
 public class Task0217 {
     public static int min(int a, int b, int c, int d) {
-        if (min(a, b) > c) {
-            if (min(a, b) > d) {
-                return c;
-            }
-        } else {
+        if (min(a, b) < c && min(a, b) < d) {
+            return min(a, b);
+        }
+        else if (min(a, b) > c && c < d) {
+            return c;
+        }
+        else {
             return d;
         }
     }
