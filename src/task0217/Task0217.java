@@ -4,25 +4,14 @@ package task0217;
 */
 public class Task0217 {
     public static int min(int a, int b, int c, int d) {
-        if (min(a, b) < c && min(a, b) < d) {
-            return min(a, b);
-        }
-        else if (min(a, b) > c && c < d) {
-            return c;
-        }
-        else {
-            return d;
-        }
+        if (min(a, b) < c && min(a, b) < d) { return min(a, b);}
+        else if (min(a, b) > c && c < d) { return c;}
+        else {return d;}
     }
 
     public static int min(int a, int b) {
-        if(a < b){
-            return a;
-        }
-        else {
-            return b;
-        }
-
+        if(a < b){ return a;}
+        else { return b; }
     }
 
     public static void main(String[] args) throws Exception {
