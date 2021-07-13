@@ -10,7 +10,7 @@ public class BeerSong {
                 word = "бутылка"; // единственное число
             }
 
-            System.out.println(beerNum + " " + word + " пива на стене");
+//            System.out.println(beerNum + " " + word + " пива на стене");
             System.out.println(beerNum + " " + word + " пива.");
             System.out.println("Возьми одну");
             System.out.println("Пусти по кругу");
@@ -21,7 +21,6 @@ public class BeerSong {
             else {
                 System.out.println("Нет бутылок пива на стене");
             }
-
         }
     }
 }
